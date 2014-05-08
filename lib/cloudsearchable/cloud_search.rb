@@ -5,7 +5,7 @@ module CloudSearch
   API_VERSION = "2011-02-01"
 
   def self.client
-    @client ||= AWS::CloudSearch::Client.new
+    @client ||= AWS::CloudSearch::Client::V20130101.new
   end
 
   def self.client=(client)
